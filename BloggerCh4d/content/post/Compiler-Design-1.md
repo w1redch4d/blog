@@ -38,7 +38,7 @@ The interpreter itself is a program that needs to be implemented using the low-l
 
 **How an Interpreter Works:**
 
-An interpreter typically **fetches the next instruction** from the high-level program, **interprets it**, **executes it**, and then moves to the next instruction. During execution, the interpreter takes two inputs:
+An interpreter typically **fetches the next instruction** from the [IR](https://en.wikipedia.org/wiki/Intermediate_representation), **interprets it**, **executes it**, and then moves to the next instruction. During execution, the interpreter takes two inputs:
 *   The **program** with high-level instructions.
 *   **Input data** required for the program to execute.
 
