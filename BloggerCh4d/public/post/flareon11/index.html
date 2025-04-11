@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=40317&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='http://localhost:40317/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='http://localhost:40317/css/frameworks.min.css' />
+    <link rel="stylesheet" href='http://localhost:40317/css/github.min.css' />
+    <link rel="stylesheet" href='http://localhost:40317/css/github-style.css' />
+    <link rel="stylesheet" href='http://localhost:40317/css/light.css' />
+    <link rel="stylesheet" href='http://localhost:40317/css/dark.css' />
+    <link rel="stylesheet" href='http://localhost:40317/css/syntax.css' />
+    <title>FlareOn11 - BloggerCh4d</title>
+    
+    <link rel="icon" type="image/x-icon" href='/images/github.png'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    
+
+    
+    <meta name="description"
+  content="Writeups for FlareOn-2024" />
+<meta name="keywords"
+  content='' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="http://localhost:40317/post/flareon11/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="FlareOn11 - BloggerCh4d" />
+<meta name="twitter:description"
+  content="Writeups for FlareOn-2024" />
+<meta name="twitter:site" content="http://localhost:40317/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="http://localhost:40317/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="FlareOn11 - BloggerCh4d">
+<meta property="og:description"
+  content="Writeups for FlareOn-2024" />
+<meta property="og:url" content="http://localhost:40317/post/flareon11/" />
+<meta property="og:site_name" content="FlareOn11" />
+<meta property="og:image"
+  content="http://localhost:40317/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2025-04-11 14:25:45 &#43;0530 IST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="http://localhost:40317/">
+        <img class="octicon" height="32" width="32" src="/images/GitHub-Mark-Light-32px.png">
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:http://localhost:40317/">
+            </label>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="http://localhost:40317/">
+        <img class="octicon octicon-mark-github v-align-middle" height="32" width="32" src="/images/GitHub-Mark-Light-32px.png">
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
+</div>
+
+  
+<div class="application-main">
+  <div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="http://localhost:40317/">
+                  <img class=" avatar-user"
+                    src="/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="http://localhost:40317/">w1redch4d</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
+                    <a href="http://localhost:40317/post/flareon11/">FlareOn11</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Fri, 11 Apr 2025 14:25:45 &#43;0530"
+                    class="no-wrap">
+                    Fri, 11 Apr 2025 14:25:45 &#43;0530</relative-time>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      2390 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><h1 id="flare-on-11-2024">Flare-On 11 (2024)</h1>
+<p>Get the binaries from the <a href="http://flare-on.com/files/Flare-On11_Challenges.zip">Flare-On website</a> and <a href="https://cloud.google.com/blog/topics/threat-intelligence/flareon-11-challenge-solutions">Flare-On 11 stats and solutions by Mandiant team</a>.</p>
+<ul>
+<li><a href="./FlareOn11.md#1-frog">1 Frog</a></li>
+<li><a href="./FlareOn11.md#2-checksum">2 Checksum</a></li>
+<li><a href="./FlareOn11.md#3-aray">3 Aray</a></li>
+<li><a href="./FlareOn11.md#4-mememaker3000">4 Mememaker 3000</a></li>
+<li><a href="./FlareOn11.md#5-sshd">5 SSHD</a></li>
+</ul>
+<h2 id="1-frog">1 Frog</h2>
+<p>Run <code>frog.py</code>. You need to move the frog through a maze to reach the statue.
+<img src="../../assets/img/flareon2024-1-2.png" alt="img"></p>
+<p>Reading the provided challenge code i found the following snippet:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">victory_tile</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">Vector2</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> 
+</span></span></code></pre></div><p>along with the flag generation function :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">GenerateFlagText</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">key</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="o">*</span><span class="mi">20</span>
+</span></span><span class="line"><span class="cl">    <span class="n">encoded</span> <span class="o">=</span> <span class="s2">&#34;</span><span class="se">\xa5\xb7\xbe\xb1\xbd\xbf\xb7\x8d\xa6\xbd\x8d\xe3\xe3\x92\xb4\xbe\xb3\xa0\xb7\xff\xbd\xbc\xfc\xb1\xbd\xbf</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">^</span> <span class="n">key</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">encoded</span><span class="p">])</span>
+</span></span></code></pre></div><p>so i just ripped the flag generation function out and called it with the <code>victory_tile</code> coordiates as function arguments as such:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">GenerateFlagText</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">key</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="o">*</span><span class="mi">20</span>
+</span></span><span class="line"><span class="cl">    <span class="n">encoded</span> <span class="o">=</span> <span class="s2">&#34;</span><span class="se">\xa5\xb7\xbe\xb1\xbd\xbf\xb7\x8d\xa6\xbd\x8d\xe3\xe3\x92\xb4\xbe\xb3\xa0\xb7\xff\xbd\xbc\xfc\xb1\xbd\xbf</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">chr</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">^</span> <span class="n">key</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">encoded</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">GenerateFlagText</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+</span></span></code></pre></div><p>and the result was
+Flag: <code>welcome_to_11@flare-on.com</code></p>
+<h2 id="2-checksum">2 Checksum</h2>
+<p>We are basically provided with a PE executable called <code>checksum.exe</code>, upon running it outputs:</p>
+<p><img src="../../assets/img/flareon2024-2-1.png" alt="img"></p>
+<p>Without wasting time I cracked open this program in IDA Pro, turns out it’s written in Golang with full debug symbols. Program’s got exactly three non-library functions: <code>main_main</code>, <code>main_a</code>, and <code>main_b</code>. That’s it. Either this thing is gloriously simple, or it’s hiding eldritch horrors inside b. But hey, at least it looks like I won’t need to sell my soul to reverse engineer it. Small mercies.</p>
+<p><img src="../../assets/img/flareon2024-2-2.png" alt="img"></p>
+<p>Since it is Go, let’s go to <code>main_main</code> function. First, we are met with a for loop. In each loop, it generates two random values and ask the user to input the sum. It does this for a random number of times. However, this part does not contribute to the following process, so we can safely ignore it.</p>
+<p><img src="../../assets/img/flareon2024-2-3.png" alt="img"></p>
+<p>After the for loop, it asks for a new input &ldquo;Checksum.&rdquo; Based on the checks after input, it needs to be a hex string which decodes to a 32-byte data. Using this decoded 32-byte data as a key, it creates a XChaCha20-Poly1305 AEAD cipher (notice the X here). Then, it passes in a data buffer with the name <code>main_encryptedFlagData</code> along with its size.</p>
+<p><img src="../../assets/img/flareon2024-2-4.png" alt="img">
+<img src="../../assets/img/flareon2024-2-6.png" alt="img">
+<img src="../../assets/img/flareon2024-2-7.png" alt="img"></p>
+<p>Looking a bit deeper into the library’s documentation, we see that the crypto algorithm’s key size must be 32-bytes with 2 different nonce sizes. The 12-byte nonce is used for the standard ChaCha20-Poly1305 variant, while the 24-byte nonce is used for the XChaCha20-Poly1305 algorithm.</p>
+<p><img src="../../assets/img/flareon2024-2-5.png" alt="img"></p>
+<p>We don’t know the key yet. It is also non-brute-forceable as it is 32 bytes long. Let’s continue reading the code:</p>
+<p><img src="../../assets/img/flareon2024-2-8.png" alt="img"></p>
+<p>First, it uses SHA 256 to hash the decrypted data. Then, it turns the hash into hex and compare it with the input hex string (checksum). If it is the same, it calls function main.a with the input hex string. If the function call returns true, it will finally output the decrypted data to</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="p">{</span><span class="nx">os</span><span class="p">.</span><span class="nf">UserCacheDir</span><span class="p">()}</span><span class="err">\</span><span class="nx">REAL_FLAREON_FLAG</span><span class="p">.</span><span class="nx">JPG</span><span class="p">.</span>
+</span></span></code></pre></div><p>So let’s take a look at what <code>main_a</code> does—it’s actually not that complicated. We see that it first XOR’s the input string with a constant string <code>FlareOn2024</code>. Then it encodes the XOR’d string to base64, and compare it with a constant string <code>cQoFRQErX1YAVw1zVQdFUSxfAQNRBXUNAxBSe15QCVRVJ1pQEwd/WFBUAlElCFBFUnlaB1ULByRdBEFdfVtWVA==</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span> <span class="nx">i</span> <span class="p">=</span> <span class="mi">0</span><span class="nx">LL</span><span class="p">;</span> <span class="nx">a2</span> <span class="p">&gt;</span> <span class="nx">i</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">a5</span> <span class="p">=</span> <span class="nx">v9</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">v17</span> <span class="p">=</span> <span class="nx">v15</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">v18</span> <span class="p">=</span> <span class="nx">i</span> <span class="o">-</span> <span class="mi">11</span> <span class="o">*</span> <span class="p">((</span><span class="nx">__int64</span><span class="p">)((</span><span class="nx">unsigned</span> <span class="nx">__int128</span><span class="p">)(</span><span class="nx">i</span> <span class="o">*</span> <span class="p">(</span><span class="nx">__int128</span><span class="p">)</span><span class="mh">0x5D1745D1745D1746</span><span class="nx">LL</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">64</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">v19</span> <span class="p">=</span> <span class="nx">v15</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span> <span class="nx">v18</span> <span class="o">&gt;=</span> <span class="mh">0xB</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="nf">runtime_panicIndex</span><span class="p">(</span><span class="nx">v18</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="mi">11</span><span class="nx">LL</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">v10</span> <span class="p">=</span> <span class="s">&#34;FlareOn2024bad verb &#39;%0123456789_/dev/stdout/dev/stderrCloseHandleOpenProcessGetFileTypeshort write30517578125bad argSizemethodargs(reflect.SetProcessPrngMoveFileExWNetShareAddNetShareDeluserenv.dllassistQueuenetpollInitreflectOffsglobalAllocmSpanManualstart traceclobberfreegccheckmarkscheddetailcgocall nilunreachable s.nelems=   of size  runtime: p  ms clock,  nBSSRoots=runtime: P  exp.) for minTrigger=GOMEMLIMIT=bad m value, elemsize= freeindex= span.list=, npages = tracealloc( p-&gt;status= in status  idleprocs= gcwaiting= schedtick= timerslen= mallocing=bad timedivfloat64nan1float64nan2float64nan3float32nan2GOTRACEBACK) at entry+ (targetpc= , plugin: runtime: g : frame.sp=created by broken pipebad messagefile existsbad addressRegCloseKeyCreateFileWDeleteFileWExitProcessFreeLibrarySetFileTimeVirtualLockWSARecvFromclosesocketgetpeernamegetsocknamecrypt32.dllmswsock.dllsecur32.dllshell32.dlli/o timeoutavx512vnniwavx512vbmi2LocalAppDatashort buffer152587890625762939453125OpenServiceWRevertToSelfCreateEventWGetConsoleCPUnlockFileExVirtualQueryadvapi32.dlliphlpapi.dllkernel32.dllnetapi32.dllsweepWaiterstraceStringsspanSetSpinemspanSpecialgcBitsArenasmheapSpecialgcpacertracemadvdontneedharddecommitdumping heapchan receivelfstack.push span.limit= span.state=bad flushGen MB stacks, worker mode  nDataRoots= nSpanRoots= wbuf1=&lt;nil&gt; wbuf2=&lt;nil&gt; gcscandone runtime: gp= found at *( s.elemsize= B (&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">v11</span> <span class="p">=</span> <span class="p">(</span><span class="nx">unsigned</span> <span class="nx">__int8</span><span class="p">)</span><span class="nx">aTrueeeppfilepi</span><span class="p">[</span><span class="nx">v18</span> <span class="o">+</span> <span class="mi">3060</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="o">*</span><span class="p">(</span><span class="nx">_BYTE</span> <span class="o">*</span><span class="p">)(</span><span class="nx">a5</span> <span class="o">+</span> <span class="nx">i</span><span class="p">)</span> <span class="p">=</span> <span class="nx">v11</span> <span class="p">^</span> <span class="nx">v19</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">v9</span> <span class="p">=</span> <span class="nx">a5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">v15</span> <span class="p">=</span> <span class="nx">v17</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">v20</span> <span class="p">=</span> <span class="nx">v9</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">v21</span> <span class="p">=</span> <span class="nf">encoding_base64__ptr_Encoding_EncodeToString</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">runtime_bss</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">v9</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">a2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">a2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">a5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="p">(</span><span class="nx">_DWORD</span><span class="p">)</span><span class="nx">v10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">v11</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">v12</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">v13</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">v23</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">v24</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="nx">v25</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span> <span class="nx">v20</span> <span class="o">==</span> <span class="mi">88</span> <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nf">runtime_memequal</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">             <span class="nx">v21</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="s">&#34;cQoFRQErX1YAVw1zVQdFUSxfAQNRBXUNAxBSe15QCVRVJ1pQEwd/WFBUAlElCFBFUnlaB1ULByRdBEFdfVtWVA==&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="nx">LL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>So to get the input, all we need to do is to reverse this process:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>
+</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="o">=</span> <span class="sa">b</span><span class="s2">&#34;FlareOn2024&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">decoded_data</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="s1">&#39;cQoFRQErX1YAVw1zVQdFUSxfAQNRBXUNAxBSe15QCVRVJ1pQEwd/WFBUAlElCFBFUnlaB1ULByRdBEFdfVtWVA==&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">xored</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">([</span><span class="n">b</span> <span class="o">^</span> <span class="n">key</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">decoded_data</span><span class="p">)])</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">xored</span><span class="p">)</span>
+</span></span></code></pre></div><p>Gives us :</p>
+<p><img src="../../assets/img/flareon2024-2-9.png" alt="img"></p>
+<p>As we read previously , In the final part of the program’s main function, the program calls the API <code>os.UserCacheDir</code> to retrieve the
+default root directory that stores user-specific cached data. On Windows, this path is the <code>%LocalAppData%</code> path. The program then proceeds to write the decrypted data content to the file <code>REAL_FLAREON_FLAG.JPG</code> in the <code>%LocalAppData%</code> folder.</p>
+<p><img src="../../assets/img/flareon2024-2-10.png" alt="img"></p>
+<p>Below is the image <code>REAL_FLAREON_FLAG.JPG</code> in the <code>%LocalAppData%</code> directory, which gives us the flag of <code>Th3_M4tH_Do_b3_mAth1ng@flare-on.com</code>.</p>
+<p><img src="../../assets/img/flareon2024-2-11.png" alt="img"></p>
+<h1 id="3-aray">3 Aray</h1>
+<p>We are given a single <code>aray.yara</code> file. <a href="https://virustotal.github.io/yara/">YARA</a> file is basically a rule file for detecting certain file patterns. It is used widely in detecting malicious programs/files by antivirus softwares.
+For the YARA file we are given, if we look at the condition section, we can see it’s basically hundreds of rules chained together using and. For a target file to match, we essentially want to satisfy all the conditions.</p>
+<p>We can split the conditions into a few groups:</p>
+<ul>
+<li>
+<p>First, there&rsquo;s a condition that checks if the file is exactly 85 bytes long.</p>
+</li>
+<li>
+<p>Second, there&rsquo;s a condition that checks if the MD5 hash of the file is b7dc94ca98aa58dabb5404541c812db2.</p>
+</li>
+<li>
+<p>Next, there are conditions that use normal math operations. These are pretty straightforward, and we can directly turn them into Z3 expressions.
+Here are a few examples:</p>
+<pre tabindex="0"><code>    filesize ^ uint8(11) != 107 becomes filesize ^ flag[11] != 107
+
+    uint8(55) &amp; 128 == 0 becomes flag[55] &amp; 128 == 0
+
+    uint8(48) % 12 &lt; 12 becomes ULT(flag[48] % 12, 12)
+</code></pre></li>
+<li>
+<p>Finally, we have conditions that involve hashes. At first, these look tricky because they seem hard to solve with Z3. But if you look closer, you’ll notice all  the hash checks are done only on 2 bytes at a time.</p>
+</li>
+</ul>
+<p>Because of this, we can actually write our own functions to &ldquo;solve&rdquo; these hashes by brute-forcing or testing values until they work. first let write a simple awk query with sed and sort to extract the conditions:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">awk <span class="s1">&#39;NR==n-1&#39;</span> <span class="nv">n</span><span class="o">=</span><span class="k">$(</span>wc -l &lt; aray.yara<span class="k">)</span> aray.yara <span class="p">|</span> sed <span class="s1">&#39;s/and /\n/g&#39;</span> <span class="p">|</span> sort
+</span></span></code></pre></div><p>which gives us the following:</p>
+<pre tabindex="0"><code>filesize ^ uint8(0) != 16 
+filesize ^ uint8(0) != 41 
+filesize ^ uint8(1) != 0 
+filesize ^ uint8(10) != 205 
+filesize ^ uint8(10) != 44 
+filesize ^ uint8(11) != 107 
+filesize ^ uint8(11) != 33 
+filesize ^ uint8(12) != 116 
+filesize ^ uint8(12) != 226 
+filesize ^ uint8(1) != 232 
+filesize ^ uint8(13) != 219 
+filesize ^ uint8(13) != 42 
+filesize ^ uint8(14) != 161 
+filesize ^ uint8(14) != 99 
+filesize ^ uint8(15) != 205 
+filesize ^ uint8(15) != 27 
+filesize ^ uint8(16) != 144 
+filesize ^ uint8(16) != 7 
+filesize ^ uint8(17) != 16 
+filesize ^ uint8(17) != 208 
+filesize ^ uint8(18) != 234 
+filesize ^ uint8(18) != 33 
+filesize ^ uint8(19) != 222 
+filesize ^ uint8(19) != 31 
+filesize ^ uint8(20) != 17 
+filesize ^ uint8(20) != 83 
+filesize ^ uint8(21) != 188 
+filesize ^ uint8(21) != 27 
+filesize ^ uint8(2) != 205 
+filesize ^ uint8(22) != 191 
+filesize ^ uint8(22) != 31 
+filesize ^ uint8(23) != 18 
+filesize ^ uint8(23) != 242 
+filesize ^ uint8(24) != 217 
+filesize ^ uint8(24) != 94 
+filesize ^ uint8(25) != 224 
+filesize ^ uint8(2) != 54 
+filesize ^ uint8(25) != 47 
+filesize ^ uint8(26) != 161 
+filesize ^ uint8(26) != 44 
+filesize ^ uint8(27) != 244 
+filesize ^ uint8(27) != 43 
+filesize ^ uint8(28) != 12 
+filesize ^ uint8(28) != 238 
+filesize ^ uint8(29) != 158 
+filesize ^ uint8(29) != 37 
+filesize ^ uint8(30) != 18 
+filesize ^ uint8(30) != 249 
+filesize ^ uint8(31) != 32 
+filesize ^ uint8(3) != 147 
+filesize ^ uint8(31) != 5 
+filesize ^ uint8(32) != 30 
+filesize ^ uint8(32) != 77 
+filesize ^ uint8(33) != 157 
+filesize ^ uint8(33) != 27 
+filesize ^ uint8(34) != 115 
+filesize ^ uint8(3) != 43 
+filesize ^ uint8(34) != 39 
+filesize ^ uint8(35) != 120 
+filesize ^ uint8(35) != 18 
+filesize ^ uint8(36) != 6 
+filesize ^ uint8(36) != 95 
+filesize ^ uint8(37) != 141 
+filesize ^ uint8(37) != 37 
+filesize ^ uint8(38) != 8 
+filesize ^ uint8(38) != 84 
+filesize ^ uint8(39) != 18 
+filesize ^ uint8(39) != 49 
+filesize ^ uint8(40) != 230 
+filesize ^ uint8(40) != 49 
+filesize ^ uint8(41) != 233 
+filesize ^ uint8(41) != 74 
+filesize ^ uint8(42) != 1 
+...
+hash.crc32(34, 2) == 0x5888fc1b 
+hash.crc32(63, 2) == 0x66715919 
+hash.crc32(78, 2) == 0x7cab8d64 
+hash.crc32(8, 2) == 0x61089c5c 
+hash.md5(0, 2) == &#34;89484b14b36a8d5329426a3d944d2983&#34; 
+hash.md5(0, filesize) == &#34;b7dc94ca98aa58dabb5404541c812db2&#34; 
+hash.md5(32, 2) == &#34;738a656e8e8ec272ca17cd51e12f558b&#34; 
+hash.md5(50, 2) == &#34;657dae0913ee12be6fb2a6f687aae1c7&#34; 
+hash.md5(76, 2) == &#34;f98ed07a4d5f50f7de1410d905f1477f&#34; 
+hash.sha256(14, 2) == &#34;403d5f23d149670348b147a15eeb7010914701a7e99aad2e43f90cfa0325c76f&#34; 
+hash.sha256(56, 2) == &#34;593f2d04aab251f60c9e4b8bbc1e05a34e920980ec08351a18459b2bc7dbf2f6&#34; 
+uint32(10) + 383041523 == 2448764514 
+uint32(17) - 323157430 == 1412131772 
+uint32(22) ^ 372102464 == 1879700858 
+uint32(28) - 419186860 == 959764852 
+uint32(3) ^ 298697263 == 2108416586 
+uint32(37) + 367943707 == 1228527996 
+uint32(41) + 404880684 == 1699114335 
+uint32(46) - 412326611 == 1503714457 
+uint32(52) ^ 425706662 == 1495724241 
+uint32(59) ^ 512952669 == 1908304943 
+uint32(66) ^ 310886682 == 849718389 
+uint32(70) + 349203301 == 2034162376 
+uint32(80) - 473886976 == 69677856 
+uint8(0) &amp; 128 == 0 
+uint8(0) &lt; 129 
+uint8(0) % 25 &lt; 25 
+uint8(0) &gt; 30 
+uint8(10) % 10 &lt; 10 
+uint8(10) &amp; 128 == 0 
+uint8(10) &lt; 146 
+uint8(10) &gt; 9 
+uint8(11) &amp; 128 == 0 
+uint8(11) &lt; 154 
+uint8(11) &gt; 18 
+uint8(11) % 27 &lt; 27 
+uint8(1) &amp; 128 == 0 
+uint8(1) &lt; 158 
+uint8(1) % 17 &lt; 17 
+uint8(1) &gt; 19 
+uint8(12) &amp; 128 == 0 
+uint8(12) &lt; 147 
+uint8(12) &gt; 19 
+uint8(12) % 23 &lt; 23 
+uint8(13) &amp; 128 == 0 
+uint8(13) &lt; 147 
+uint8(13) &gt; 21 
+uint8(13) % 27 &lt; 27 
+...
+</code></pre><p>Conditions that are hashes at first glance seems impossible to be solved by Z3. However, we can write a small python script to manually solve for it using bruteforce since all the hashes are done only on exactly 2 bytes:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">sha256</span><span class="p">,</span> <span class="n">md5</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">permutations</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">zlib</span> <span class="kn">import</span> <span class="n">crc32</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">targets</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="k">lambda</span> <span class="n">b</span><span class="p">:</span> <span class="n">sha256</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">(),</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;403d5f23d149670348b147a15eeb7010914701a7e99aad2e43f90cfa0325c76f&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;593f2d04aab251f60c9e4b8bbc1e05a34e920980ec08351a18459b2bc7dbf2f6&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="k">lambda</span> <span class="n">b</span><span class="p">:</span> <span class="n">md5</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">(),</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;89484b14b36a8d5329426a3d944d2983&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;f98ed07a4d5f50f7de1410d905f1477f&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;657dae0913ee12be6fb2a6f687aae1c7&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;738a656e8e8ec272ca17cd51e12f558b&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="k">lambda</span> <span class="n">b</span><span class="p">:</span> <span class="nb">hex</span><span class="p">(</span><span class="n">crc32</span><span class="p">(</span><span class="n">b</span><span class="p">)),</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;0x61089c5c&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;0x5888fc1b&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;0x66715919&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;0x7cab8d64&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">permutations</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">256</span><span class="p">),</span> <span class="mi">2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="nb">bytearray</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">func</span><span class="p">,</span> <span class="n">hashes</span> <span class="ow">in</span> <span class="n">targets</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">h</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">hashes</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;----&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>and then write the z3py script in accordance with the conditions :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">z3</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">solver</span> <span class="o">=</span> <span class="n">Solver</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">filesize</span> <span class="o">=</span> <span class="n">BitVec</span><span class="p">(</span><span class="s1">&#39;filesize&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">u8_vars</span> <span class="o">=</span> <span class="p">[</span><span class="n">BitVec</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;u8_</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">85</span><span class="p">)]</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">u8</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">u8_vars</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">constraints</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">16</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">41</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">205</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">44</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">107</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">33</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">116</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">226</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">filesize</span> <span class="o">^</span> <span class="n">u8</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">232</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ... add all similar lines here ...</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">constraints</span> <span class="o">+=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="n">u8</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mi">128</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">u8</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">129</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">u8</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">%</span> <span class="mi">25</span> <span class="o">&lt;</span> <span class="mi">25</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">u8</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">u8</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">u8</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mi">128</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">u8</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">146</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">u8</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ... add all similar lines here ...</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">constraints</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">solver</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">solver</span><span class="o">.</span><span class="n">check</span><span class="p">()</span> <span class="o">==</span> <span class="n">sat</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">model</span> <span class="o">=</span> <span class="n">solver</span><span class="o">.</span><span class="n">model</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Solution found:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;filesize = </span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">filesize</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">var</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">u8_vars</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;u8[</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s2">] = </span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">var</span><span class="p">]</span><span class="o">.</span><span class="n">as_long</span><span class="p">()</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">var</span> <span class="ow">in</span> <span class="n">u32_vars</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;u32[</span><span class="si">{</span><span class="n">idx</span><span class="si">}</span><span class="s2">] = </span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">var</span><span class="p">]</span><span class="o">.</span><span class="n">as_long</span><span class="p">()</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;No solution found.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Let’s have Z3 solve it:</p>
+<pre tabindex="0"><code>rule flareon { strings: $f = &#34;1RuleADayK33p$Malw4r3Aw4y@flare-on.com&#34; condition: $f }
+</code></pre><h1 id="4-mememaker3000">4 mememaker3000</h1>
+<p>We are given a single HTML called <code>mememaker3000.html</code> file with a obfuscated JavaScript inside. Opening up in browser gives us the following page:</p>
+<p><img src="../../assets/img/flareon2024-4-1.png" alt="img"></p>
+<p>after deobfuscating with <a href="https://de4js.kshift.me/">de4js</a> cleaning up my code looks as such :</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">meme_quotes</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;When you find a buffer overflow in legacy code&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;Reverse Engineer&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;When you decompile the obfuscated code and it makes perfect sense&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;Me after a week of reverse engineering&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;When your decompiler crashes&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;It&#39;s not a bug, it&#39;a a feature&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;Security &#39;Expert&#39;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;AI&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;That&#39;s great, but can you hack it?&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;When your code compiles for the first time&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;If it ain&#39;t broke, break it&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;Reading someone else&#39;s code&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;EDR&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;This is fine&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;FLARE On&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;It&#39;s always DNS&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;strings.exe&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;Don&#39;t click on that.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;When you find the perfect 0-day exploit&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;Security through obscurity&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;Instant Coffee&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;H@x0r&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;Malware&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;$1,000,000&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;IDA Pro&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;Security Expert&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">meme_types</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">doge1</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;75%&#39;</span><span class="p">,</span> <span class="s1">&#39;25%&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;75%&#39;</span><span class="p">,</span> <span class="s1">&#39;82%&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">boy_friend0</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;75%&#39;</span><span class="p">,</span> <span class="s1">&#39;25%&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;40%&#39;</span><span class="p">,</span> <span class="s1">&#39;60%&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;70%&#39;</span><span class="p">,</span> <span class="s1">&#39;70%&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">draw</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;30%&#39;</span><span class="p">,</span> <span class="s1">&#39;30%&#39;</span><span class="p">]],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">drake</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;10%&#39;</span><span class="p">,</span> <span class="s1">&#39;75%&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;55%&#39;</span><span class="p">,</span> <span class="s1">&#39;75%&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">two_buttons</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;10%&#39;</span><span class="p">,</span> <span class="s1">&#39;15%&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="p">[</span><span class="s1">&#39;2%&#39;</span><span class="p">,</span> <span class="s1">&#39;60%&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">success</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;75%&#39;</span><span class="p">,</span> <span class="s1">&#39;50%&#39;</span><span class="p">]],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">disaster</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;5%&#39;</span><span class="p">,</span> <span class="s1">&#39;50%&#39;</span><span class="p">]],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">aliens</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;5%&#39;</span><span class="p">,</span> <span class="s1">&#39;50%&#39;</span><span class="p">]],</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">meme_images</span> <span class="o">=</span> <span class="p">{.....}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">a0f</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;caption1&#39;</span><span class="p">).</span><span class="nx">hidden</span> <span class="o">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;caption2&#39;</span><span class="p">).</span><span class="nx">hidden</span> <span class="o">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;caption3&#39;</span><span class="p">).</span><span class="nx">hidden</span> <span class="o">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;meme-template&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">value</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">meme_types</span><span class="p">[</span><span class="nx">b</span><span class="p">].</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">c</span><span class="p">,</span> <span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;caption&#39;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">d</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">e</span><span class="p">.</span><span class="nx">hidden</span> <span class="o">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">top</span> <span class="o">=</span> <span class="nx">meme_types</span><span class="p">[</span><span class="nx">b</span><span class="p">][</span><span class="nx">d</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">e</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">left</span> <span class="o">=</span> <span class="nx">meme_types</span><span class="p">[</span><span class="nx">b</span><span class="p">][</span><span class="nx">d</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">e</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">meme_quotes</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="p">(</span><span class="nx">meme_quotes</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a0f</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">a0g</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;meme-image&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">a0h</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;meme-container&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">a0i</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;remake&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">a0j</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;meme-template&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a0g</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">meme_images</span><span class="p">[</span><span class="nx">a0j</span><span class="p">.</span><span class="nx">value</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a0j</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;change&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">a0g</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="nx">meme_images</span><span class="p">[</span><span class="nx">a0j</span><span class="p">.</span><span class="nx">value</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">a0g</span><span class="p">.</span><span class="nx">alt</span> <span class="o">=</span> <span class="nx">a0j</span><span class="p">.</span><span class="nx">value</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">a0f</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a0i</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">a0f</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">checksum</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">a0g</span><span class="p">.</span><span class="nx">alt</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">).</span><span class="nx">pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">a</span> <span class="o">!==</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">meme_images</span><span class="p">)[</span><span class="mi">5</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">a0l</span><span class="p">.</span><span class="nx">textContent</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">c</span> <span class="o">=</span> <span class="nx">a0m</span><span class="p">.</span><span class="nx">textContent</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">d</span> <span class="o">=</span> <span class="nx">a0n</span><span class="p">.</span><span class="nx">textContent</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">meme_quotes</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span> <span class="o">==</span> <span class="mi">14</span> <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">meme_quotes</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span> <span class="o">==</span> <span class="nx">meme_quotes</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&amp;&amp;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">meme_quotes</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="o">==</span> <span class="mi">22</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">e</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">().</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">&lt;</span> <span class="nx">e</span> <span class="o">+</span> <span class="mi">3000</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">d</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;h&#39;</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">a</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">b</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">c</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">c</span><span class="p">[</span><span class="nx">c</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;5&#39;</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;4&#39;</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">c</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">c</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">c</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;3&#39;</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">d</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">a</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;j4&#39;</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">meme_quotes</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">d</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;5&#39;</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">c</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">d</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;1&#39;</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">c</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;7&#39;</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">meme_quotes</span><span class="p">[</span><span class="mi">21</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">b</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">a</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">meme_quotes</span><span class="p">[</span><span class="mi">4</span><span class="p">].</span><span class="nx">substring</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">f</span> <span class="o">=</span> <span class="nx">f</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">alert</span><span class="p">(</span><span class="nx">atob</span><span class="p">(</span><span class="s1">&#39;Q29uZ3JhdHVsYXRpb25zISBIZXJlIHlvdSBnbzog&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="nx">f</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">a0l</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;caption1&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">a0m</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;caption2&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">a0n</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;caption3&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a0l</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">checksum</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a0m</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">checksum</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a0n</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;keyup&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">checksum</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span></code></pre></div><p>so from my understanding i have to match the captions and ill get the flag, inside distracted boyfriend.</p>
+<p><img src="../../assets/img/flareon2024-4-2.png" alt="img"></p>
+<h1 id="5-sshd">5 SSHD</h1>
+<p>We are given a giant <code>tar</code> file which is a copy of the entire Linux filesystem.</p>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='http://localhost:40317/js/toc.js'></script>
+<link rel="stylesheet" href='http://localhost:40317/css/toc.css' />
+
+  
+</div>
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="http://localhost:40317/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+      <li class="mr-3 mr-lg-0">GitHub and the Invertocat logo are trademarks of <a href="https://github.com/">GitHub, Inc.</a></li>
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+
+</body>
+
+<script type="application/javascript" src="http://localhost:40317/js/github-style.js"></script>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,17 @@
+baseURL = "https://w1redch4d.github.io/"
+languageCode = "en-US"
+title = "BloggerCh4d"
+theme = "github-style"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  author = "w1redch4d"
+  description = "Fuzzing my brain till it gets SIGSEGV"
+  github = "w1redch4d"
+  linkedin = "w1redch4d"
+  twitter = "w1redch4d"
+  email = "weirdflexbutok200@gmail.com"
+  favicon = "/images/github.png"
+  avatar = "/images/avatar.png"
+  headerIcon = "/images/GitHub-Mark-Light-32px.png"
