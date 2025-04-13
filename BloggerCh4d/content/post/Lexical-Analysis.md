@@ -29,8 +29,9 @@ To a computer this js source code, is just a stream of characters, separated by 
 let<space>x,<space>z<space>=<space>0;\nlet<space>y,<space>a<space>=<space>1;\nif<space>(x<space>><space>y)<space>{\n\tz<space>=<space>1\n}<space>else<space>{\n\ta<space>=<space>z;\n}
 ```
 where `"\n"` represents a newline, `"\t"` represents a tab and `<space>` represents the spaces which are there in the middle, the job for the interpreter is to now convert this stream of characters into a set of tokens. Now lets understand what do i mean by "a stream of tokens" in here, so basically we want to insert delimiters (`|`) into that stream of characters such that they distinguish one "character" from another : 
-```
-let | x | , | z | = | 0 | ; | \n | let | y | , | a | = | 1 | ; | \n | if | ( | x | > | y | ) | { | \n | \t | z | = | 1 | \n | } | else | { | \n | \t | a | = | z | ; | \n | }
+
+```js
+let | x | , | z | = | 0 | ; let | y | , | a | = | 1 | ; if | ( | x | > | y | ) | { | z | = | 1 | ; | } | else | { | a | = | z | ; | }
 ```
 
 so in this case the `if` word is one token (keyword token), and `x` is another token (identifier token), `\n` and `\t` or `<space>` for that matter are also tokens (whitespace tokens).
