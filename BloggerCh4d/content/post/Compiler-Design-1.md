@@ -5,13 +5,13 @@ draft = false
 summary = 'a brief about compiler design'
 +++
 
-# Compiler Design Module 1: 
+# Compiler Design : 1 
 
 Before we start on designing a compiler, a genuine question that would come to mind would be **wtf is even a compiler?**, to understand that lets start with the question **what is an interpreter?**
 
 ## 1. Understanding the Machine and the Need for Interpreters
 
-Consder a machine , machine is a very vague term so we have to describe what do i even mean by a "machine", for our understanding of this module we would define our machine to be a [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine#Overview), so essentially a machine that can compute a set of instructions. I am going to call these instructions a "low level instruction". so any "program" with "low level instructions" can execute on the machine,
+Consider a machine , machine is a very vague term so we have to describe what do i even mean by a "machine", for our understanding of this module we would define our machine to be a [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine#Overview), so essentially a machine that can compute a set of instructions. I am going to call these instructions a "low level instruction". so any "program" with "low level instructions" can execute on the machine,
 
 ```mermaid
 graph TD
