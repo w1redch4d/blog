@@ -1,7 +1,8 @@
 +++
 title = 'Lexical Analysis'
 date = 2025-04-13T08:44:23+05:30
-draft = true
+draft = false
+summary = 'Scanner, Token generation'
 +++
 
 # Introduction to Lexical Analysis
