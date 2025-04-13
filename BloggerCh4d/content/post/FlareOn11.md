@@ -8,12 +8,6 @@ summary = 'Writeups for FlareOn-2024'
 
 Get the binaries from the [Flare-On website](http://flare-on.com/files/Flare-On11_Challenges.zip) and [Flare-On 11 stats and solutions by Mandiant team](https://cloud.google.com/blog/topics/threat-intelligence/flareon-11-challenge-solutions).
 
-- [1 Frog](./FlareOn11.md#1-frog)
-- [2 Checksum](./FlareOn11.md#2-checksum)
-- [3 Aray](./FlareOn11.md#3-aray)
-- [4 Mememaker 3000](./FlareOn11.md#4-mememaker3000)
-- [5 SSHD](./FlareOn11.md#5-sshd)
-
 ## 1 Frog
 
 Run `frog.py`. You need to move the frog through a maze to reach the statue.
