@@ -1,11 +1,11 @@
-+++
-title = 'Intro V8'
-date = 2025-04-11T13:06:01+05:30
-draft = false
-summary = "Introduction to Javascript in Rendering"
-[params]
-  author = 'w1redch4d'
-+++
+---
+title : "Intro V8"
+date : 2025-04-11T13:06:01+05:30
+draft : false
+summary : "Introduction to Javascript in Rendering"
+series : "Understanding V8 internals"
+tags : ["v8", "compiler design"]
+---
 
 ## Preliminaries
 
@@ -29,7 +29,7 @@ V8 Engine:
 Security Upgrade - Ubercage (V8 Heap SBX):
 - New sandboxing for V8 to protect against arbitrary memory access, even if renderer is compromised.
 
-```mermaid
+{{< mermaid >}}
 graph TD
     A[Browser Process] --> B[Renderer Process]
     A --> C[Utility Process]
@@ -44,7 +44,7 @@ graph TD
     C --> K[Network Management]
     C --> L[File System Access]
     D --> M[Graphics Rendering]
-```
+{{< /mermaid >}}
 
 ## JS Engine Pipeline (V8)
 When JavaScript code runs in V8, it goes through several steps:
@@ -99,7 +99,7 @@ Trigger:
 - `gc()` for Mark-compact.
 
 Here’s a visual of the whole flow:
-```mermaid
+{{< mermaid >}}
 graph TD
     A[JS Code] --> B[Lexer]
     B --> C[Parser]
@@ -124,9 +124,10 @@ graph TD
         O --> P[NewSpace]
         O --> Q[OldSpace]
     end
-```
+{{< /mermaid >}}
 
-## Useful References:
+## Useful References
+
 - [V8 Doxygen Source](https://v8-docs.vercel.app)
 - [Orinoco: The new V8 gc](https://www.youtube.com/watch?v=Scxz6jVS4Ls&t=683s)
 - [V8 official docs](https://v8.dev)

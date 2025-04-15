@@ -82,7 +82,7 @@ If `startSystemServer` is true, the forkSystemServer method is [invoked](https:/
     - The Zygote server enters a command socket loop ([zygoteServer.runSelectLoop(abiList)](https://android.googlesource.com/platform/frameworks/base.git/+/master/core/java/com/android/internal/os/ZygoteInit.java#898)), waiting for commands to spawn additional child processes.
 
 Here is a graph diagram of Zygote's execution flow:
-```mermaid
+{{< mermaid >}}
 graph TD
     A[ZygoteInit.main] --> B[Parse Command-line Arguments]
     B --> C[Check 'start-system-server' Parameter]
@@ -100,4 +100,4 @@ graph TD
     H --> I[Setup Environment and Invoke SystemServer]
 
     F -->|Parent Process pid != 0| G
-```
+{{< /mermaid >}}

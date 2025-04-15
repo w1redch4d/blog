@@ -1,9 +1,11 @@
-+++
-title = 'Compiler Design Principles in V8'
-date = 2025-04-12T02:29:05+05:30
-draft = false
-summary = 'A post to correlate an high level overview of v8 with the previous compiler design post'
-+++
+---
+title : "Compiler Design Principles in V8"
+date : 2025-04-12T02:29:05+05:30
+draft : false
+summary : "A post to correlate an high level overview of v8 with the previous compiler design post"
+series : "Understanding V8 internals"
+tags : ["v8", "compiler design"]
+---
 
 # Compiler Design Principles in V8
 
@@ -21,7 +23,7 @@ A [**compiler**](https://w1redch4d.github.io/post/compiler-design-1/#3-compiled-
 
 **V8 is Google's open-source high-performance JavaScript and WebAssembly engine**, written in C++. It is used in Chrome and Node.js, among others. V8 implements ECMAScript and WebAssembly and runs on various operating systems and processors. Its primary goal is to execute JavaScript with high performance, often achieving near-native speeds through various optimizations, including Just-In-Time (JIT) compilation. The V8 engine employs a pipeline to execute JavaScript code:
 
-```mermaid
+{{< mermaid >}}
 graph TD
     A[JavaScript Code] --> B(Lexer);
     B --> C(Parser);
@@ -42,18 +44,27 @@ graph TD
     F -- Garbage Collection Trigger --> N;
     H -- Garbage Collection Trigger --> N;
     I -- Garbage Collection Trigger --> N;
-```
+{{< /mermaid >}}
 
 *   **Lexer:** The [Lexer](./Intro-V8.md#js-engine-pipeline-v8) takes in the JavaScript code and divides it into tokens such as keywords, constants, operators, and variables. This process is called [**lexical analysis**].
+
 *   **Parser:** The parser utilizes these tokens to generate an **Abstract Syntax Tree (AST)** and also validates the JavaScript source code syntax. The AST is a tree representation of the program.
+
 *   **Ignition:** Ignition is an **interpreter** responsible for generating bytecode from the AST and then running it. Its design is based on a register-based machine. You can view V8's bytecode using the `--print-bytecode` flag with `d8`. Every function in V8 is represented as a `JSFunction`, which contains a `bytecode` object (`BytecodeArray`).
+
 *   **Sparkplug:** Sparkplug is a **baseline compiler** that generates non-optimizing machine code. It performs **Peephole optimization**, which involves replacing small sequences of instructions with equivalent, more performant ones. Sparkplug compiles directly from bytecode in a single linear pass and is more of a dispatcher to per-bytecode machine code generation functions.
+
 *   **Maglev:** Maglev is a **mid-tier JIT compiler** that performs some optimizations and generates somewhat optimized machine code. It fills the gap between Sparkplug's fast but non-optimized code and Turbofan's highly optimized but slower compilation. Maglev uses **Control Flow Graph (CFG)** as its Intermediate Representation (IR) and employs techniques like Static Single Assignment (SSA) and Loop-invariant code motion (LICM) (experimental).
+
 *   **Turbofan:** Turbofan is a **high-end optimizing JIT compiler** that applies extensive optimizations and generates highly optimized machine code. It uses an IR called **Sea of Nodes**, representing both control flow and data flow. Turbofan's pipeline involves various phases like TyperPhase, inlining, and SimplifiedLowering.
+
 *   **Profiler:** The Profiler collects runtime information and detects "hot" code (code executed frequently). Based on the execution count, hot code is sent to Maglev or Turbofan for JIT compilation. The runtime information is stored in the **Feedback Vector**, which is used by the JIT compilers for speculative optimization.
+
 *   **Deoptimizer:** The Deoptimizer handles cases where JIT-compiled code becomes invalid due to failed assumptions, falling back to the Ignition interpreter for execution.
+
 *   **Garbage Collection (GC):** GC is necessary for memory management in V8, freeing objects that are no longer in use. V8 uses a **Generational Garbage Collector**, dividing the heap into NewSpace and OldSpace. The **Scavenger** handles garbage collection in NewSpace, while **Mark-compact** is used for OldSpace. Orinoco is the codename for the effort to make V8's garbage collector mostly concurrent and parallel.
-*   V8 also implements **Heap Sandbox (SBX)** or Ubercage, a software-based sandbox for protection against memory corruption bugs. It replaces raw pointers with offsets to tables stored outside the sandbox. Various pointer types like Compressed Pointer, Sandboxed Pointer, and Trusted Pointer are used within the sandbox.
+
+*  **Ubercage (Heap SBX):** V8 also implements **Heap Sandbox (SBX)** or Ubercage, a software-based sandbox for protection against memory corruption bugs. It replaces raw pointers with offsets to tables stored outside the sandbox. Various pointer types like Compressed Pointer, Sandboxed Pointer, and Trusted Pointer are used within the sandbox.
 
 ## 3. Applying Compiler Design Principles to V8
 
@@ -78,7 +89,7 @@ A key motivation for introducing Ignition was to address issues with **memory us
 
 Furthermore, Ignition aims to reduce the **complexity** of the compiler pipeline by making the bytecode the central **source of truth** for optimization, simplifying the interaction between the interpreter and the optimizing compilers. This allows Turbofan to optimize directly from the bytecode.
 
-```mermaid
+{{< mermaid >}}
 graph TD
     A[JavaScript Source] --> B(Parser);
     B --> C(AST);
@@ -91,13 +102,13 @@ graph TD
     I --> J(Bytecode);
     J --> K(Interpreter - Bytecode Handlers);
     K --> L(Execution);
-```
+{{< /mermaid >}}
 
 ### 3.2. JIT Compilation as Partial Evaluation
 
 The **JIT compilers in V8 (Sparkplug, Maglev, and Turbofan) embody the concept of compilation as partial evaluation**.
 
-```mermaid
+{{< mermaid >}}
 graph TD
     A[Interpreter - Ignition] -- Takes Program (Bytecode) --> B{Specialization?};
     B -- No (Infrequent Execution) --> C[Execute in Interpreter];
@@ -110,7 +121,7 @@ graph TD
     E --> J(Execution);
     G --> J;
     I --> J;
-```
+{{< /mermaid >}}
 
 *   **Sparkplug**, while a compiler, performs minimal optimization (Peephole optimization). It can be seen as a relatively straightforward specialization of the interpreter's bytecode execution for a specific function. It takes the bytecode (the output of the "program" processed by the initial stage) and directly generates machine code.
 *   **Maglev and Turbofan take this specialization further by performing significant optimizations**. They analyze the bytecode and runtime information (collected by the profiler) to make assumptions and rewrite the code into more efficient forms (using IRs like CFG and Sea of Nodes) before generating optimized machine code. This aligns with the idea of **partial evaluation of the interpreter on the program**. The JIT compilers act as "specializers" that leverage the static input (bytecode) and runtime feedback to produce specialized "executables" (optimized machine code).
@@ -119,7 +130,7 @@ graph TD
 
 V8 employs multiple tiers of JIT compilation, representing different levels of specialization and optimization:
 
-```mermaid
+{{< mermaid >}}
 graph TD
     A[Bytecode] --> B{Execution Count?};
     B -- Low --> C[Ignition - Interpretation];
@@ -133,7 +144,7 @@ graph TD
     G --> J;
     H --> J;
     I --> J;
-```
+{{< /mermaid >}}
 
 *   **Sparkplug** provides a quick initial compilation with minimal overhead, offering a faster start than pure interpretation but less optimization.
 *   **Maglev** offers a balance between compilation speed and optimization level, filling the gap between Sparkplug and Turbofan.

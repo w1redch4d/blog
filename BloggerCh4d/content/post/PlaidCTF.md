@@ -1,11 +1,9 @@
-+++
-title = 'PlaidCTF'
-date = 2025-04-11T11:14:17+05:30
-draft = false
-summary = "My Writeups for PlaidCTF 2025"
-[params]
-  author = 'w1redch4d'
-+++
+---
+title : "PlaidCTF"
+date : 2025-04-11T11:14:17+05:30
+draft : false
+summary : "My writeups for PlaidCTF"
+---
 
 ## V8 my beloved (or Excav8) 
 ```

@@ -1,9 +1,11 @@
-+++
-title = 'Lexical Analysis'
-date = 2025-04-13T08:44:23+05:30
-draft = false
-summary = 'Scanner, Token generation'
-+++
+---
+title : "Lexical Analysis"
+date : 2025-04-13T08:44:23+05:30
+draft : false
+summary: "An introduction to Lexical Analysis in V8"
+series : "Understanding V8 internals"
+tags : ["v8", "compiler design", "lexical analysis", "scanner", "token generation"]
+---
 
 # Introduction to Lexical Analysis
 
@@ -38,11 +40,12 @@ so in this case the `if` word is one token (keyword token), and `x` is another t
 
 In the context of the V8 JavaScript engine, the **Lexer** is the first component in the JavaScript execution pipeline. It takes the JavaScript code and divides it into tokens such as keywords, constants, operators, and variables.
 
-```mermaid
+{{< mermaid >}}
 graph TD
     A[Source Code] --> B(Lexer);
     B --> C[Token Stream];
-```
+{{< /mermaid >}}
+
 The **"Lexer"** for V8 is called **"scanner"** and can be found found in the directory [`./src/parsing`](https://v8-docs.vercel.app/dir_3fb67633942bd84f7aa391e58ba835b3.html) and the code that converts the stream of characters into token can be found here in the file [`scanner-inl.h`](https://v8-docs.vercel.app/scanner-inl_8h_source.html#l00351) along with [call graph for the function](https://v8-docs.vercel.app/classv8_1_1internal_1_1Scanner.html#a11ad4829073aee72344151129608643b).
 
 **Important Note:** I am not using the official v8 source from the main refs as it is subject to change with newer commits in the future.
@@ -121,44 +124,25 @@ As a result of this process, the token corresponding to the string `"function"` 
 
 Here is the control flow graph of the codeflow:
 
-```mermaid
+{{< mermaid >}}
 graph TD
-    A[Start: ScanSingleToken] --> B[c0_ points to first character 'f']
+    A[Start: ScanSingleToken] --> B[Set c0_ to first character]
     B --> C{Is c0_ ASCII?}
     C -- Yes --> D[Check one_char_tokens]
     D --> E{IsAsciiIdentifier?}
     E -- Yes --> F[Token type: Token::kIdentifier]
     F --> G[Call ScanIdentifierOrKeyword]
-    G --> H[Save current character 'f' in window -> backing_store_]
-    H --> I[Call AdvanceUntil]
-    I --> J[Read characters until terminator]
-    J --> K[Collect string 'function']
-    K --> L[Token complete]
-    L --> M[Call GetToken]
-    M --> N[Lookup token in predefined hash table]
-    N --> O{Is keyword?}
-    O -- Yes --> P[Token type: Token::kFunction]
-    P --> S[Advance to next token: 'is_greater']
-    
-    S --> T[c0_ points to first character 'i']
-    T --> U{Is c0_ ASCII?}
-    U -- Yes --> V[Check one_char_tokens]
-    V --> W{IsAsciiIdentifier?}
-    W -- Yes --> X[Token type: Token::kIdentifier]
-    X --> Y[Call ScanIdentifierOrKeyword]
-    Y --> Z[Save current character 'i' in window -> backing_store_]
-    Z --> AA[Call AdvanceUntil]
-    AA --> AB[Read characters until terminator]
-    AB --> AC[Collect string 'is_greater']
-    AC --> AD[Token complete]
-    AD --> AE[Call GetToken]
-    AE --> AF[Lookup token in predefined hash table]
-    AF --> AG{Is keyword?}
-    AG -- No --> AH[Token type: Token::kIdentifier 'is_greater']
-    AH --> R[End]
-
-    AG -- Yes --> AI[Token type: Token::kFunction] 
-    AI --> R[End]
-
-    P --> R[End]
-```
+    G --> H[Save current character in backing_store_]
+    H --> I[Call AdvanceUntil - read until terminator]
+    I --> J[Collect identifier string]
+    J --> K[Token complete]
+    K --> L[Call GetToken]
+    L --> M[Lookup token in keyword hash table]
+    M --> N{Is keyword?}
+    N -- Yes --> O[Set Token type: appropriate keyword type]
+    N -- No --> P[Set Token type: Token::kIdentifier with collected string]
+    O --> Q[Advance to next token or End]
+    P --> Q[Advance to next token or End]
+    C -- No --> R[Handle non-ASCII case - not shown]
+    E -- No --> S[Handle non-identifier case - not shown]
+{{< /mermaid >}}
