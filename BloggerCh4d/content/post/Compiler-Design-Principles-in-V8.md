@@ -68,7 +68,7 @@ graph TD
 
 ## 3. Applying Compiler Design Principles to V8
 
-The V8 pipeline clearly demonstrates the principles of compilation and interpretation discussed in "Compiler Design Module 1 : Compilation is partial evaluation of the Interpreter".
+The V8 pipeline clearly demonstrates the principles of compilation and interpretation discussed in [**"Compiler Design: 1"**](https://w1redch4d.github.io/post/compiler-design-1/).
 
 ### 3.1. Ignition as the Interpreter
 

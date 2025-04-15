@@ -48,10 +48,11 @@ graph TD
 
 ## JS Engine Pipeline (V8)
 When JavaScript code runs in V8, it goes through several steps:
-- [Lexer](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/parsing/token.h)
-    - Breaks the JS code into tokens (keywords, constants, operators, variables).
-- [Parser](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/parsing/parsing.cc)
+- [Lexer](Lexical-Analysis.md)
+    - Breaks the JS code into tokens (keywords, constants, operators, variables), and make the `c0_` point to the first character of the js code that will be compiled.
+- [Parser](https://v8-docs.vercel.app/parser_8cc_source.html#l00668)
     - Uses tokens to build an [AST (Abstract Syntax Tree)](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/ast/ast.cc).
+    - Insert the node into the AST tree.
     - Checks if the code is valid.
 - Ignition (Interpreter)
     - Converts AST into bytecode.
