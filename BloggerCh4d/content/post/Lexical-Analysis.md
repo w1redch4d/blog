@@ -126,8 +126,7 @@ Here is the control flow graph of the codeflow:
 
 {{< mermaid >}}
 graph TD
-    A[Start: ScanSingleToken] --> B[Set c0_ to first character]
-    B --> C{Is c0_ ASCII?}
+    A[Start: ScanSingleToken] -- c0_ is set to first character --> C{Is c0_ ASCII?}
     C -- Yes --> D[Check one_char_tokens]
     D --> E{IsAsciiIdentifier?}
     E -- Yes --> F[Token type: Token::kIdentifier]
