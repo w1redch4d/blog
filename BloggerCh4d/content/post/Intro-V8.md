@@ -49,11 +49,14 @@ graph TD
 ## JS Engine Pipeline (V8)
 When JavaScript code runs in V8, it goes through several steps:
 - [Lexer](https://w1redch4d.github.io/post/lexical-analysis/)
-    - Breaks the JS code into tokens (keywords, constants, operators, variables), and make the `c0_` point to the first character of the js code that will be compiled.
+    - Breaks the JS code into tokens (keywords, constants, operators, variables) and stores it into **cache**
+    - Makes the `c0_` point to the first character of the js code that will be compiled.
 - [Parser](https://v8-docs.vercel.app/parser_8cc_source.html#l00668)
-    - Uses tokens to build an [AST (Abstract Syntax Tree)](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/ast/ast.cc).
+    - Uses tokens from the **token cache** to build an [AST (Abstract Syntax Tree)](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/ast/ast.cc).
     - Insert the node into the AST tree.
     - Checks if the code is valid.
+    - When encountered with a Cache miss, it calls the **lexer** to generate the token and store it in **cache** as well and then continues to work.
+    
 - Ignition (Interpreter)
     - Converts AST into bytecode.
     - Runs the bytecode using a register-based machine model.
